@@ -8,7 +8,7 @@ const template = readFileSync(
   'utf8'
 );
 
-const serverBundle = require('../../measuring-broadband-new-zealand/dist/vue-ssr-server-bundle.json');
+const serverBundle = require('../dist/vue-ssr-server-bundle.json');
 const app = express();
 
 app.use(
