@@ -1,0 +1,30 @@
+{
+  "name": "generic-microsite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "NODE_ENV=development vue-cli-service serve",
+    "build": "npm run build:server && npm run build:client -- --no-clean",
+    "build:client": "vue-cli-service build",
+    "build:server": "WEBPACK_TARGET=node vue-cli-service build",
+    "start": "npm run build && npm run server:run",
+    "server:run": "node ./server",
+    "server:dev": "WEBPACK_WATCH=true RUN_NODEMON=true sk-build-server"
+  },
+  "dependencies": {
+    "@samknows/utils": "./minimal-utils/samknows-utils-0.13.0.tgz",
+    "core-js": "^2.6.5",
+    "express": "^4.17.1",
+    "vue": "^2.6.10",
+    "vue-server-renderer": "^2.6.10",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.8"
+  }
+}
