@@ -14,7 +14,7 @@
   "dependencies": {
     "@samknows/utils": "./minimal-utils/samknows-utils-0.13.0.tgz",
     "core-js": "^2.6.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "vue": "^2.6.10",
     "vue-server-renderer": "^2.6.10",
     "webpack-node-externals": "^1.7.2"
